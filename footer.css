@@ -1,0 +1,232 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 1% 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo img {
+    width: 15%;
+    margin-right: 5%;
+}
+
+.logo span {
+    font-size: 2vw;
+    color: white;
+}
+
+.logo strong {
+    color: #d87d3c;
+}
+
+.menu {
+    display: flex;
+    gap: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    color: rgb(214, 152, 16);
+    display: inline-block;
+}
+
+.buttons {
+    width: 16%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login, .register {
+    padding: 6px;
+    border: 0.2vw solid #d87d3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.login {
+    background: none;
+    color: #d87d3c;
+}
+
+.register {
+    background: white;
+    color: #d87d3c;
+}
+
+.login:hover, .register:hover {
+    background: #d87d3c;
+    color: white;
+}
+
+.login i, .register i {
+    color: #d87d3c;
+    transition: color 0.3s;
+}
+
+.login:hover i, .register:hover i {
+    transition: all 0.7s;
+    color: white;
+}
+
+.buttons button i {
+    margin-right: 0.5vw;
+    color: #d87d3c;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    border-top: 3px solid #ffcc00;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: rgb(177, 169, 169);
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i {
+    font-size: 1.25em;
+    color: white;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a:hover:nth-child(1) { background-color: #1877F2; }
+.social-icons a:hover:nth-child(2) { background-color: #E4405F; }
+.social-icons a:hover:nth-child(3) { background-color: #000; }
+.social-icons a:hover:nth-child(4) { background-color: #0077B5; }
+
+/* Media Queries */
+@media (max-width: 1500px) {
+    header > .access {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+    }
+    header > .logo, header > nav {
+        width: 100%;
+        justify-content: center;
+    }
+    header .logo-container {
+        transform: scale(0.8);
+    }
+    header .logo h1 {
+        margin-left: 12.5px;
+    }
+    .access {
+        display: none;
+    }
+    header > nav {
+        justify-content: space-between;
+    }
+    header > nav a {
+        padding: 20px 25px;
+    }
+    #snkr-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ftr-title {
+        width: 100%;
+    }
+    #social-container {
+        justify-content: center;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        width: 100%;
+        align-items: center;
+    }
+}

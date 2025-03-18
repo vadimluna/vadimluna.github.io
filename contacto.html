@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - All Shoes</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<header class="navbar" >
+    <div class="logo">
+        <img src="..\PagZapatos\imagenes\Logo.png" alt="Logo">
+        <span><strong>ALL</strong> SHOES</span>
+    </div>
+    <nav class="menu">
+        <a href="main.html">INICIO</a>
+        <a href="tienda.html">TIENDA</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <div class="buttons">
+        <button class="login"><i class="fa-solid fa-user"></i>Login</button>
+        <button class="register"><i class="fa-solid fa-id-card"></i>Register</button>
+    </div>
+</header>
+<body>
+
+          <!-- Contenido Contacto -->
+    <main class="contact-container">
+        <section class="info">
+            <h1 class="contacto-titulo">
+                <p>CONTACTO</p>
+            </h1>
+
+            <h2>¿TIENES ALGUNA DUDA?</h2>
+            <p class="texto-negrita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil?</p>
+            <p class="texto-secundario">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit hic excepturi minima omnis odio odit quam modi, fugiat ut vitae voluptate? Dolorum ullam cumque architecto nihil voluptate voluptatum est sunt voluptas accusamus quas iste atque praesentium officiis, excepturi sapiente.
+            </p>
+
+            <h3>E-Mail</h3>
+                <a href="mailto:info@allshoes.es" class="email-link">
+                    <i class="fa-solid fa-envelope"></i> info@allshoes.es
+                </a>
+        
+
+            <h3>Redes Sociales</h3>
+            <div class="contact-logo">
+                <div class="social-icons-logo">
+                    <img src="..\PagZapatos\imagenes\logo.png" alt="Logo central" class="central-logo">
+                    <img src="..\PagZapatos\imagenes\twitter.png" alt="Twitter" class="icon">
+                    <img src="..\PagZapatos\imagenes\whatsapp.png" alt="WhatsApp" class="icon">
+                    <img src="..\PagZapatos\imagenes\telegram.png" alt="Telegram" class="icon">
+                    <img src="..\PagZapatos\imagenes\instagram.png" alt="Instagram" class="icon">
+                    <img src="..\PagZapatos\imagenes\facebook.png" alt="Facebook" class="icon">
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section class="contact-form">
+            <form>
+                    <input type="text" id="nombre" name="nombre" minlength="2" required placeholder="Introduce tu nombre">
+                    <input type="email" name="email" placeholder="E-Mail (direccions@email.com)" pattern="[A-Za-z0-9]+@[A-Za-z0-9]+\..+" required>
+                    <input type="tel" name="number" placeholder="Teléfono (XXX-XXX-XXX)" 
+                    pattern="(([0-9]{3}-[0-9]{3}-[0-9]{3})|([0-9]{3}[0-9]{3}[0-9]{3})|([0-9]{3} [0-9]{3} [0-9]{3}))" required>
+                <select required>
+                    <option value="">TEMA</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="soporte">Soporte</option>
+                </select>
+                <textarea placeholder="Mensaje" required></textarea>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="aceptar" requiered >
+                        Aceptar <a href="condiciones.pdf" target="_blank">condiciones</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+<footer class="footer">
+        <div class="footer-section">
+            <h3>Compañía</h3>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="#">Política Privacidad</a></li>
+                <li><a href="#">Afíliate</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Preguntas</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Afíliate</a></li>
+                <li><a href="#">Pago</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Tienda</h3>
+            <ul>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Zapatos</a></li>
+                <li><a href="#">Teléfonos</a></li>
+                <li><a href="#">Pantallas</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+</footer>
+</html>

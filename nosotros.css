@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 50px 0; /* Aumenta el espacio arriba y abajo */
+    letter-spacing: 3px;
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(15, 12, 12, 0.6);
+}
+
+.linea {
+    width: 98%; /* Hace que la línea se mantenga proporcionada */
+    height: 2px;
+    background-color: #ccc;
+    margin: auto;
+}
+
+.cajaPadre {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* Permite que se adapte en pantallas pequeñas */
+}
+
+.cajaImagenHija {
+    flex: 1;
+}
+
+.cajaImagenHija img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cajaInfo {
+    flex: 1;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.paginaLogo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.paginaLogo img {
+    width: 40px;
+}
+
+.paginaLogo h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.redesSociales img {
+    width: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.redesSociales img:hover {
+    filter: grayscale(0%);
+    
+}
+
+
+
+/* Contenedor EMPRESA */
+.titulo-empresa {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(41, 37, 37, 0.3);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor del logo y nombre */
+.paginaLogo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre logo y texto */
+}
+
+/* Estilo del logo */
+.logo2 {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo del nombre ALL SHOES en una sola línea */
+.nombre-empresa {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+.negro {
+    color: black;
+}
+
+.naranja {
+    color: orange;
+}
+
+.titulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    
+}
+
+.linea {
+    width: 98%; 
+    height: 2px;
+    background-color: #777;
+    margin: 5px 0; 
+}
+.titulo {
+    margin: 5px 0;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 1px rgba(0, 0, 0, 0.5), 
+        1px -1px 1px rgba(0, 0, 0, 0.5), 
+        -1px 1px 1px rgba(0, 0, 0, 0.5), 
+        1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-container {
+    margin: 30px 0; 
+}
+
+.titulo {
+    margin: 20px 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content { 
+    flex: 1; /
+}
+
+.footer {
+    margin-top: auto; 
+}
+
+@keyframes rippleEffect {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px var(--shadow-color);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+}
+
+.redesSociales img {
+    width: 30px;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redesSociales img:hover {
+    filter: grayscale(0%);
+    animation: rippleEffect 1s ease-out infinite;
+}
+
+
+#instagram { --shadow-color: #E1306C; }
+#facebook { --shadow-color: #1877F2; }
+#twitter { --shadow-color: #1c1e1f; }
+
+@media (max-width: 800px) {
+    .cajaPadre {
+        flex-direction: column; /* Apila los elementos */
+        align-items: center; /* Centra el contenido */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    .cajaImagenHija {
+        order: -1; /* Mueve la imagen arriba */
+    }
+
+    .cajaInfo {
+        width: 100%; /* Asegura que ocupe el ancho completo */
+    }
+}
+
+

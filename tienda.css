@@ -1,0 +1,200 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.02);
+}
+
+.producto img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categoria {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: red;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: orange;
+}
+
+.shoes-label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 5px 15px; 
+    border-radius: 50px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+.product-title {
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.producto {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.producto:hover {
+    filter: grayscale(0%);
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.precio-tachado {
+    font-size: 0.9em;
+    text-decoration: line-through;
+    color: red;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.price-and-colors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.precio-tachado {
+    font-size: 14px;
+    color: red;
+    text-decoration: line-through;
+}
+
+.color-options {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.color-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.producto:hover .color-options,
+.producto:hover .color-circle {
+    filter: grayscale(0%);
+
+}
+
+.black { background-color: black; }
+.orange { background-color: orange; }
+.red { background-color: red; }
+
+.color-circle{
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.9); 
+    width: 18px; 
+    height: 18px;
+    margin-top: -10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content { 
+    flex: 1; 
+}
+
+.footer {
+    margin-top: auto; 
+}
+
+@media (max-width: 800px) {
+    .productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+    }
+}
+
+
+
